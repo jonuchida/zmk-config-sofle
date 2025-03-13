@@ -28,6 +28,17 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        a-z {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <39 40>;
+            slow-release;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,7 +61,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp LEFT RIGHT>,
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
